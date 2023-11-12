@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960E9CBE2B0103F900E2236D /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 960E9CBD2B0103F900E2236D /* SFSafeSymbols */; };
 		96D3A6822AFE70A600E86E4B /* Only_ReadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3A6812AFE70A600E86E4B /* Only_ReadApp.swift */; };
 		96D3A6842AFE70A600E86E4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3A6832AFE70A600E86E4B /* ContentView.swift */; };
 		96D3A6862AFE70A600E86E4B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3A6852AFE70A600E86E4B /* Item.swift */; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960E9CBE2B0103F900E2236D /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,9 @@
 			dependencies = (
 			);
 			name = "Only Read";
+			packageProductDependencies = (
+				960E9CBD2B0103F900E2236D /* SFSafeSymbols */,
+			);
 			productName = "Only Read";
 			productReference = 96D3A67E2AFE70A600E86E4B /* Only Read.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 96D3A6752AFE70A600E86E4B;
+			packageReferences = (
+				960E9CBC2B0103F900E2236D /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = 96D3A67F2AFE70A600E86E4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		960E9CBC2B0103F900E2236D /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		960E9CBD2B0103F900E2236D /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 960E9CBC2B0103F900E2236D /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96D3A6762AFE70A600E86E4B /* Project object */;
 }
