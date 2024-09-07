@@ -14,6 +14,10 @@
 		961B83CC2C84AB5D00908267 /* Only_ReadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B83CB2C84AB5D00908267 /* Only_ReadUITests.swift */; };
 		961B83CE2C84AB5D00908267 /* Only_ReadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B83CD2C84AB5D00908267 /* Only_ReadUITestsLaunchTests.swift */; };
 		96D86F0B2C8C89EE002C7A86 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D86F0A2C8C89EE002C7A86 /* MainView.swift */; };
+		96D86F102C8C8A96002C7A86 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 96D86F0F2C8C8A96002C7A86 /* SDWebImageSwiftUI */; };
+		96D86F132C8C8ACB002C7A86 /* BookShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D86F122C8C8ACB002C7A86 /* BookShelfView.swift */; };
+		96D86F162C8C8AFB002C7A86 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 96D86F152C8C8AFB002C7A86 /* SFSafeSymbols */; };
+		96D86F192C8C8C63002C7A86 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D86F182C8C8C63002C7A86 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,8 @@
 		961B83CB2C84AB5D00908267 /* Only_ReadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Only_ReadUITests.swift; sourceTree = "<group>"; };
 		961B83CD2C84AB5D00908267 /* Only_ReadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Only_ReadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		96D86F0A2C8C89EE002C7A86 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		96D86F122C8C8ACB002C7A86 /* BookShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfView.swift; sourceTree = "<group>"; };
+		96D86F182C8C8C63002C7A86 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D86F162C8C8AFB002C7A86 /* SFSafeSymbols in Frameworks */,
+				96D86F102C8C8A96002C7A86 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,8 @@
 		961B83AB2C84AB5C00908267 /* Only-Read */ = {
 			isa = PBXGroup;
 			children = (
+				96D86F172C8C8C56002C7A86 /* Settings */,
+				96D86F112C8C8ABA002C7A86 /* BookShelf */,
 				961B83AC2C84AB5C00908267 /* Only_ReadApp.swift */,
 				96D86F0A2C8C89EE002C7A86 /* MainView.swift */,
 				961B83B22C84AB5D00908267 /* Assets.xcassets */,
@@ -131,6 +141,22 @@
 			path = "Only-ReadUITests";
 			sourceTree = "<group>";
 		};
+		96D86F112C8C8ABA002C7A86 /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				96D86F122C8C8ACB002C7A86 /* BookShelfView.swift */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
+		96D86F172C8C8C56002C7A86 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				96D86F182C8C8C63002C7A86 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +173,10 @@
 			dependencies = (
 			);
 			name = "Only-Read";
+			packageProductDependencies = (
+				96D86F0F2C8C8A96002C7A86 /* SDWebImageSwiftUI */,
+				96D86F152C8C8AFB002C7A86 /* SFSafeSymbols */,
+			);
 			productName = "Only-Read";
 			productReference = 961B83A92C84AB5C00908267 /* Only-Read.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +249,10 @@
 				Base,
 			);
 			mainGroup = 961B83A02C84AB5C00908267;
+			packageReferences = (
+				96D86F0E2C8C8A96002C7A86 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				96D86F142C8C8AFB002C7A86 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = 961B83AA2C84AB5C00908267 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D86F132C8C8ACB002C7A86 /* BookShelfView.swift in Sources */,
+				96D86F192C8C8C63002C7A86 /* SettingsView.swift in Sources */,
 				961B83AD2C84AB5C00908267 /* Only_ReadApp.swift in Sources */,
 				96D86F0B2C8C89EE002C7A86 /* MainView.swift in Sources */,
 			);
@@ -596,6 +632,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96D86F0E2C8C8A96002C7A86 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		96D86F142C8C8AFB002C7A86 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96D86F0F2C8C8A96002C7A86 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D86F0E2C8C8A96002C7A86 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		96D86F152C8C8AFB002C7A86 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D86F142C8C8AFB002C7A86 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 961B83A12C84AB5C00908267 /* Project object */;
 }
