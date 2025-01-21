@@ -9,12 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        NavigationStack {
-            TabView {
-                BookShelfView().tabItem { BookShelfView.itemView }
-                SettingsView().tabItem { SettingsView.itemView }
-            }
-        }
+        Text("hello")
     }
 }
 
